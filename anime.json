@@ -1,0 +1,121 @@
+[{
+    "name": "One Piece",
+    "date": "Oct 20, 1999",
+    "duration": "24 min",
+    "sposter": "img/one-piece.jpg",
+    "bposter": "img/one-piece-bposter.jpg",
+    "genre": "Adventure",
+    "url": "onepiece.html",
+    "type":"series"
+},
+{
+    "name": "Suzume",
+    "date": "Apr 21, 2023",
+    "duration": "24 min",
+    "sposter": "img/suzume.jpg",
+    "bposter": "img/suzume_bposter.png",
+    "genre": "Adventure",
+    "url": "suzume.html",
+    "type":"movie"
+},
+{
+    "name": "Death Note",
+    "date": "Oct 04, 2006",
+    "duration":"15 min",
+    "sposter": "img/death note.jpg",
+    "bposter": "img/death-note-bposter.jpg",
+    "genre": " Psychological Thriller",
+    "url": "Tokyo.html",
+    "type":"series"
+},  
+{
+    "name": "Full Metal Alchimist",
+    "date": "Oct 04, 2003",
+    "duration": "54 min",
+    "sposter": "img/full metal.jpeg",
+    "bposter": "img/full-metal-bposter.jpg",
+    "genre": "Dark Fantasy",
+    "url": "Tokyo.html",
+    "type":"series"
+},
+{
+    "name": "Tokyo Revengers",
+    "date": "Apr 11, 2021",
+    "duration": "32 min",
+    "sposter": "img/Tokyo-Revengers.jpg",
+    "bposter": "img/Tokyo.jpg",
+    "genre": "Suspense",
+    "url": "Tokyo.html",
+    "type":"series"
+},
+{
+    "name": "Your Name",
+    "date": "Aug 26, 2016",
+    "duration": "24 min",
+    "sposter": "img/your name.jpg",
+    "bposter": "img/your_name_bposter.png",
+    "genre": "Drama",
+    "url": "your_name.html",
+    "type":"movie"
+},
+{
+    "name": "My Hero Academia",
+    "date": "Apr 03, 2016",
+    "duration": "42 min",
+    "sposter": "img/my hero.jpg",
+    "bposter": "img/my-hero-bposter.png",
+    "genre": "Comedy Drama",
+    "url": "Tokyo.html",
+    "type":"series"
+},
+{
+    "name": "Attack On Titans",
+    "date": "Apr 13, 2013",
+    "duration": "60 min",
+    "sposter": "img/attack on titans.jpg",
+    "bposter": "img/attack-on-titans-bposter.jpg",
+    "genre": "Action Fiction",
+    "url": "Tokyo.html",
+    "type":"series"
+},
+{
+    "name": "Chainsaw Man",
+    "date": "Oct 12, 2022",
+    "duration": "30 min",
+    "sposter": "img/chainsawman.jpg",
+    "bposter": "img/chainsaw-man-bposter.jpg",
+    "genre": "Comedy Horror",
+    "url": "Tokyo.html",
+    "type":"series"
+},
+{
+    "name": "One Punch Man",
+    "date": "Oct 15, 2015",
+    "duration": "26 min",
+    "sposter": "img/one-punch-man.jpg",
+    "bposter": "img/one-punchman-bposter.jpg",
+    "genre": "Action",
+    "url": "Tokyo.html",
+    "type":"series"
+},
+{
+    "name": "Demon slayer",
+    "date": "Apr 06, 2019",
+    "duration": "32 min",
+    "sposter": "img/demon-slayer.png",
+    "bposter": "img/demon-slayer-bposter.png",
+    "genre": "Adventure",
+    "url": "Tokyo.html",
+    "type":"series"
+},
+{
+    "name": "Demon King",
+    "date": "Jul 04, 2020",
+    "duration": "45 min",
+    "sposter": "img/demon king.png",
+    "bposter": "img/demon-king-bposter.png",
+    "genre": "Action",
+    "url": "Tokyo.html",
+    "type":"series"
+}
+]

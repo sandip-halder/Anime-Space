@@ -1,0 +1,366 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Lobster&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+:root{
+    --first-color: #ff0000;
+    --white-color: #FAFAFF;
+    --dark-color: #000000;
+    --gray-color: #3a3a3a;
+    --light-gray: #AEAEAE;
+    --yellow-color: #F2FE00;
+    --body-font1:'Aclonica', sans-serif;
+    --body-font2: 'Lobster', cursive; /* 'kristen-itc-regular', sans-serif; */
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--gray-color);
+    font-family: var(--body-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* border: 1px solid var(--white-color); */
+    /*border-radius: 20px;*/
+    overflow: hidden; /*Hides everything outside the border*/
+    box-shadow: 0px 10px 25px -8px var(--dark-color);
+}
+header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    /*background-image: url(img/one-piece-bg.jpg);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    opacity: .5;
+    z-index: -1;
+}
+header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    background: linear-gradient(180deg, transparent, #000);
+    z-index: -1;
+}
+header video{
+    position: absolute;
+    width: 130%;
+    height: 190%;
+    top: -45%;
+    z-index: -1;
+}
+header nav{
+    width: 100%;
+    height: 8%;
+    /* border: 1px solid var(--white-color); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav .logo img{
+    width: 220px;
+}
+header nav .logo ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header nav .logo ul li{
+    padding-left: 50px;
+    font-family: var(--body-font1);
+}
+header nav .logo ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color: var(--first-color);
+    transition: .3s linear;
+    
+}
+header nav .logo ul li a:hover{
+    color: var(--white-color);
+}
+header nav .search_anime{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav .search_anime input{
+    padding: 5px 30px;
+    border: none;
+    border-radius: 5px;
+    overflow: none;
+    background-color: var(--first-color);
+    color: var(--dark-color);
+    margin-right: 50px;
+}
+header nav .search_anime input::placeholder{
+    color: var(--gray-color);
+    /* opacity: .7; */
+}
+header nav .search_anime .search_result{
+    position: absolute;
+    width: 340px;
+    height: 255px;
+    right: 0;
+    top: 42px;
+    z-index: 99999;
+    overflow-y: auto;
+}
+header nav .search_anime .search_result::-webkit-scrollbar{
+    width: 5px;
+    background: var(--gray-color);
+    border-radius: 5px;
+    visibility: hidden;
+}
+header nav .search_anime .search_result::-webkit-scrollbar-thumb{
+    width: 5px;
+    background: var(--first-color);
+    border-radius: 5px;
+    visibility: hidden;
+}
+header nav .search_anime .search_result:hover::-webkit-scrollbar{
+    visibility: visible;
+}
+header nav .search_anime .search_result:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+header nav .search_anime .search_result .card{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 3px -0px;
+    text-decoration: none;
+    display: none;
+}
+header nav .search_anime .search_result .card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    background: rgb(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    z-index: -1;
+}
+header nav .search_anime .search_result .card img{
+    width: 28px;
+    height: 90%;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+header nav .search_anime .search_result .card .cont{
+    margin-left: 10px;
+    color: var(--first-color)
+}
+header nav .search_anime .search_result .card .cont h3{
+    font-size: 18px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+}
+header nav .search_anime .search_result .card .cont p{
+    font-size: 15px;
+    color: var(--first-color);
+}
+header nav .nav_toggle{
+    color: var(--first-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+header .content{
+    position: relative;
+    color: var(--first-color);
+    margin-top: 130px;
+    padding-left: 50px;
+}
+header .content h1{
+    font-size: 55px;
+    font-family: var(--body-font1);
+}
+header .content p{
+    font-size: 12px;
+    font-family: var(--body-font1);
+    width: 450px;
+    word-break: break-all;
+}
+header .content .details{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+header .content .details h6{
+    color: var(--first-color);
+    font-family: var(--body-font1);
+    font-size: 12px;
+    margin-right: 15px;
+}
+header .content .details h5{
+    color: var(--first-color);
+    font-size: 12px;
+    font-family: var(--body-font1);
+    margin-right: 15px;
+}
+header .content .details h5 i{
+    margin-right: 4px;
+}
+header .content .btns{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+}
+header .content .btns a{
+   padding: 10px;
+   font-size: 15px;
+   font-weight: 600;
+   background: linear-gradient(90deg, #B00505, #ff0000);
+   border-radius: 3px;
+   color: var(--white-color);
+   text-decoration: none;
+   margin-left: 15px;
+}
+header .content .btns a i{
+    color: var(--dark-color);
+}
+header section{
+    color: var(--first-color);
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0px 50px;
+    bottom: 20px;
+    font-family: var(--body-font1);
+}
+header section .cards{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    /*border: 1px solid #FAFAFF;*/
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+header section .cards::-webkit-scrollbar{
+    display: none;
+}
+header section .cards .card{
+    position: relative;
+    min-width: 140px;
+    height: 185px;
+    /*border: 1px solid #FAFAFF;*/
+    border-radius: 5px;
+    margin-right: 10px;
+    background: var(--dark-color);
+    transition: .3s linear;
+}
+header section .cards .card .poster{
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+   position: relative;
+}
+header section .cards .card:hover{
+   min-width: 300px;
+   overflow: hidden;
+}
+header section .cards .card .rest_card{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   border-radius: 5px;
+   left: 0;
+   top: 0;
+   z-index: 99999;
+   opacity: 0;
+   transition: 1s linear;
+}
+header section .cards .card .rest_card img{
+   width: 100%;
+   height: 100%;
+   position: relative;
+   border-radius: 5px;
+   z-index: -1;
+}
+header section .cards .card .rest_card::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    background: linear-gradient(180deg, transparent, #000);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+header section .cards .card .rest_card .cont{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    color: var(--white-color);
+    padding: 0px 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header section .cards .card .rest_card .cont .sub p{
+   font-size: 12px;
+   font-weight: 400;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: var(--light-gray);
+}
+header section .cards .card:hover .rest_card{
+    opacity: 1;
+}
+header section .bi-chevron-left, 
+.bi-chevron-right{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    width: 25px;
+    height: 25px;
+    background: var(--light-gray);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s linear;
+    opacity: 0;
+    z-index: 99999999;
+}
+header section .bi-chevron-right{
+    left: unset;
+    right: 2%;
+}
+header section:hover .bi-chevron-right{
+    opacity: 1;
+}
+header section:hover .bi-chevron-left{
+    opacity: 1;
+}
